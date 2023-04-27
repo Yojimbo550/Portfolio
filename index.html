@@ -1,12 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="\icons\favicon.ico" type="">
+    <script src="script.js">
+        function draw() {
+      var canvas = document.getElementById("canvas");
+      if (canvas.getContext) {
+        var ctx = canvas.getContext("2d");
+
+        ctx.fillStyle = "rgb(200,0,0)";
+        ctx.fillRect (10, 10, 55, 50);
+
+        ctx.fillStyle = "rgba(0, 0, 200, 0.5)";
+        ctx.fillRect (30, 30, 55, 50);
+      }
+    }
+    </script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;600&display=swap" rel="stylesheet">
+
+
     <title>Portfolio</title>
 </head>
-<body>
+
+<body onload="draw();">
+    <canvas class="canvas" width="1487" height="990"></canvas>
     
+        <div class="about">
+            <div class="aboutHeading slide-left">ABOUT</div>
+            <div class="aboutHeading"></div>
+            <div class="workPrincipes slide-right">
+                <div class="workBlock fastWork">
+                    <div class="hexagon">
+                        
+                        <img class="fa" src="\icons\speedometer.svg">
+                      </div>
+                    
+                    <div class="workHeading">Fast</div>
+                    <div>Fast load times and lag free interaction, my highest priority.</div>
+                    
+                </div>
+                <div class="workBlock responsive">
+                    <div class="hexagon">
+                        
+                        <img class="fa" src="\icons\laptop.svg">
+                      </div>
+                    
+                    <div class="workHeading">Responsive</div>
+                    <div>My layouts will work on any device, big or small.</div>
+                </div>
+                <div class="workBlock intuitive">
+                    <div class="hexagon">
+                        
+                        <img class="fa" src="\icons\desk-lamp.svg">
+                      </div>
+                    
+                    <div class="workHeading">Intuitive</div>
+                    <div>Strong preference for easy to use, intuitive UX/UI.</div>
+                </div>
+                <div class="workBlock dynamic ">
+                    <div class="hexagon">
+                        
+                        <img class="fa " src="\icons\rocket-launch.svg">
+                      </div>
+                    
+                    <div class="workHeading">Dynamic</div>
+                    <div>Websites don't have to be static, I love making pages come to life.</div>
+                </div>
+
+            </div>
+            <div class="portfolio">
+                <div class="me">
+                    <img class="myPhoto  slide-right" src="\icons\me.jpg">
+                    <div class="meSubheading  slide-right">I'm a Novice Front-End Developer  from Saint-Petersburg.
+                        I have serious passion for visual effects, animations and creating intuitive, dynamic user experiences.
+                        <span class="refToContacts">Let's make something special.</span>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="bar">
+                        <div class="bar barTitle">CSS</div>
+                        <div class="bar barFillCSS bar-fill"></div>
+                        
+                        <span class="langStatsCSS">90%</span>
+                    </div>
+                    <div class="bar">
+                        <div class="bar barTitle">HTML</div>
+                        <div class="bar barFillHTML bar-fill"></div>
+                        
+                        <span class="langStatsHTML">90%</span>
+                    </div>
+                    <div class="bar">
+                        <div class="bar barTitle">JavaScript</div>
+                        <div class="bar barFillJS bar-fill"></div>
+                        
+                        <span class="langStatsJS">40%</span>
+                    </div>
+                    <div class="bar">
+                        <div class="bar barTitle">Vue.js</div>
+                        <div class="bar barFillVue bar-fill"></div>
+                        
+                        <span class="langStatsVue">0%</span>
+                    </div>
+                    <div class="bar">
+                        <div class="bar barTitle">SQL</div>
+                        <div class="bar barFillSQL bar-fill"></div>
+                        
+                        <span class="langStatsSQL">10%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="projects">
+            <div class="projectsHeading slide-left">PROJECTS</div>
+            <div class="projectFilter slide-right">
+                <div class="allProject">ALL</div>  
+                <!-- TODO всплытие открытия проекта -->
+                <div class="jsProjects">JAVASCRIPT</div>
+                <div class="javaProjects">JAVA</div>
+
+            </div>
+        </div>
+        <div class="contacts">
+            <div class="projectsHeading slide-right">CONTACT
+            </div>
+            <span class="contactsSubheading  slide-left">Have a question or want to work together?</span>
+            <form class="sendMessage slide-from">
+                <input placeholder="Name" type="text">
+                <input placeholder="Email" type="email">
+                <textarea placeholder="Your Message"></textarea>
+                <input class="button" tye="submit" value="        SUBMIT">
+            </form>
+        </div>
+    <footer>
+        <!-- TODO Кнопка наверх -->
+        <div class="contactsRef">
+            <div class="onTopButton"></div>
+            <div class="refs">
+            <a href="https://github.com/Yojimbo550">
+                <div class="contactsIconBlock">
+                    <img class="contactsIcon" src="\icons\github.svg">
+                </div>
+            </a>
+            <a href="https://instagram.com/aleksandr_550?igshid=YmMyMTA2M2Y=">
+                <div class="contactsIconBlock">
+                    <img class="contactsIcon" src="\icons\instagram.svg">
+                </div>
+            </a>
+            <a href="">
+                <div class="contactsIconBlock">
+                    <img class="contactsIcon" src="\icons\telegram.svg">
+                </div>
+            </a>
+            </div>
+        
+        <span class="creator">YERYOMIN ALEXANDR ©2023</span>
+    </div>
+    </footer>
 </body>
+
 </html>
