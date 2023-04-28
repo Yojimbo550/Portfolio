@@ -8,20 +8,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="icon" href="\icons\favicon.ico" type="">
-    <script src="script.js">
-        function draw() {
-      var canvas = document.getElementById("canvas");
-      if (canvas.getContext) {
-        var ctx = canvas.getContext("2d");
-
-        ctx.fillStyle = "rgb(200,0,0)";
-        ctx.fillRect (10, 10, 55, 50);
-
-        ctx.fillStyle = "rgba(0, 0, 200, 0.5)";
-        ctx.fillRect (30, 30, 55, 50);
-      }
-    }
-    </script>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;600&display=swap" rel="stylesheet">
 
@@ -29,9 +15,11 @@
     <title>Portfolio</title>
 </head>
 
-<body onload="draw();">
-    <canvas class="canvas" width="1487" height="990"></canvas>
-    
+<body>
+    <!-- <canvas id="canvas" width="1487" height="990"></canvas> -->
+    <script src="script.js"></script>
+    <div class=" preview">Hello, I'm Alexandr Yeryomin. I'm novice Front-end Developer.</div>
+    <input class=" preview button previewButton" tye="submit" value="View my work">
         <div class="about">
             <div class="aboutHeading slide-left">ABOUT</div>
             <div class="aboutHeading"></div>
