@@ -10,20 +10,31 @@
     <link rel="icon" href="\icons\favicon.ico" type="">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;600&display=swap" rel="stylesheet">
-
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <title>Portfolio</title>
 </head>
 
 <body>
     <!-- <canvas id="canvas" width="1487" height="990"></canvas> -->
-    <script src="script.js"></script>
+    <script src="canvas.js"></script>
+    <!-- <script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> -->
+        <!-- AOS.init();
+      </script> -->
     <div class=" preview">Hello, I'm Alexandr Yeryomin. I'm novice Front-end Developer.</div>
-    <input class=" preview button previewButton" tye="submit" value="View my work">
-        <div class="about">
+    <div>
+        
+        <a href="#projects"><div class=" preview button previewButton" type="submit" >View my work</div></a>
+    </div>
+    
+        <div class="about element-animation">
             <div class="aboutHeading slide-left">ABOUT</div>
             <div class="aboutHeading"></div>
-            <div class="workPrincipes slide-right">
+            <!-- <div class data-aos="fade-right"> -->
+            <!-- <div class="workPrincipes slide-right"> -->
+                <div class="workPrincipes " data-aos="fade-right" data-aos-duration="1000">
                 <div class="workBlock fastWork">
                     <div class="hexagon">
                         
@@ -65,40 +76,40 @@
             </div>
             <div class="portfolio">
                 <div class="me">
-                    <img class="myPhoto  slide-right" src="resources\icons\me.jpg">
-                    <div class="meSubheading  slide-right">I'm a Novice Front-End Developer  from Saint-Petersburg.
+                    <img class="myPhoto  " data-aos="fade-right"data-aos-duration="1000" src="resources\icons\me.jpg">
+                    <div class="meSubheading  " data-aos="fade-right" data-aos-duration="1000">I'm a Novice Front-End Developer  from Saint-Petersburg.
                         I have serious passion for visual effects, animations and creating intuitive, dynamic user experiences.
-                        <span class="refToContacts">Let's make something special.</span>
+                        <span class="refToContacts"><a class="toEmail" href="#contacts">Let's make something special.</a></span>
                     </div>
                 </div>
                 <div class="skills">
                     <div class="bar">
                         <div class="bar barTitle">CSS</div>
-                        <div class="bar barFillCSS bar-fill"></div>
+                        <div class="bar barFillCSS bar-fill" data-aos="fade-right" data-aos-duration="1000"></div>
                         
                         <span class="langStatsCSS">90%</span>
                     </div>
                     <div class="bar">
                         <div class="bar barTitle">HTML</div>
-                        <div class="bar barFillHTML bar-fill"></div>
+                        <div class="bar barFillHTML bar-fill" data-aos="fade-right" data-aos-duration="1000"></div>
                         
                         <span class="langStatsHTML">90%</span>
                     </div>
                     <div class="bar">
                         <div class="bar barTitle">JavaScript</div>
-                        <div class="bar barFillJS bar-fill"></div>
+                        <div class="bar barFillJS bar-fill" data-aos="fade-right" data-aos-duration="1000"></div>
                         
-                        <span class="langStatsJS">40%</span>
+                        <span class="langStatsJS">50%</span>
                     </div>
                     <div class="bar">
                         <div class="bar barTitle">Vue.js</div>
-                        <div class="bar barFillVue bar-fill"></div>
+                        <div class="bar barFillVue bar-fill" data-aos="fade-right" data-aos-duration="1000"></div>
                         
-                        <span class="langStatsVue">0%</span>
+                        <span class="langStatsVue">30%</span>
                     </div>
                     <div class="bar">
                         <div class="bar barTitle">SQL</div>
-                        <div class="bar barFillSQL bar-fill"></div>
+                        <div class="bar barFillSQL bar-fill" data-aos="fade-right" data-aos-duration="1000"></div>
                         
                         <span class="langStatsSQL">10%</span>
                     </div>
@@ -106,21 +117,22 @@
             </div>
         </div>
         
-        <div class="projects">
-            <div class="projectsHeading slide-left">PROJECTS</div>
-            <div class="projectFilter slide-right">
-                <div class="allProject">ALL</div>  
+        <div class="projects" id="projects">
+            <div class="projectsHeading " data-aos="fade-left" data-aos-duration="1000">PROJECTS</div>
+            <div class="projectFilter" data-aos="fade-right" data-aos-duration="1000">
+                <div class="allProjects" >ALL</div>  
                 <!-- TODO всплытие открытия проекта -->
-                <div class="jsProjects">JAVASCRIPT</div>
-                <div class="javaProjects">JAVA</div>
+                <div class="vueProjects projectFilter">VUE</div>
+                <div class="jsProjects projectFilter">JAVASCRIPT</div>
+                <div class="javaProjects projectFilter">JAVA</div>
 
             </div>
         </div>
-        <div class="contacts">
-            <div class="projectsHeading slide-right">CONTACT
+        <div class="contacts element-animation">
+            <div class="projectsHeading "data-aos="fade-right" data-aos-duration="1000">CONTACT
             </div>
-            <span class="contactsSubheading  slide-left">Have a question or want to work together?</span>
-            <form class="sendMessage slide-from">
+            <span class="contactsSubheading  "data-aos="fade-left" data-aos-duration="1000">Have a question or want to work together?</span>
+            <form class="sendMessage " data-aos="zoom-in" data-aos-duration="1000">
                 <input placeholder="Name" type="text">
                 <input placeholder="Email" type="email">
                 <textarea placeholder="Your Message"></textarea>
@@ -129,7 +141,7 @@
         </div>
     <footer>
         <!-- TODO Кнопка наверх -->
-        <div class="contactsRef">
+        <div class="contactsRef" id="contacts">
             <div class="onTopButton"></div>
             <div class="refs">
             <a href="https://github.com/Yojimbo550">
@@ -152,6 +164,11 @@
         <span class="creator">YERYOMIN ALEXANDR ©2023</span>
     </div>
     </footer>
+    <script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+     AOS.init();
+      </script> 
 </body>
 
 </html>
